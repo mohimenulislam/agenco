@@ -1,0 +1,71 @@
+.header_area {
+    background-color: $primary_color;
+    display: flex;
+}
+.main_logo {
+    width: 20%;
+    background-color: #1e2329;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 29px 0;
+    .logo__icon {
+
+    }
+    .header_middle_bar {
+        width: 2px;
+        height: 42px;
+        background-color: #ffffff;
+    }
+    .logo__text {
+        span {
+            color: #ffffff;
+            display: block;
+            font-size: 12px;
+        }
+    }
+}
+.nav_area {
+    padding: 42px 0;
+    width: 40%;
+    ul {
+        margin-left: 20px;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.header_right {
+    width: 30%;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 42px 0;
+    .telephone {
+        .fa-mobile-alt {
+            color: #ffffff;
+        }
+        a {
+            color: #ffffff;
+        }
+    }
+    .header__button {
+        margin-left: 20px;
+        a {
+            @extend %simple_button;
+            background-color: #ffffff;
+            color: $primary_color;
+        }
+        
+    }
+    .searc_icon {
+        margin-left: 20px;
+        .fa-search {
+            color: #ffffff;
+        }
+    }
+}

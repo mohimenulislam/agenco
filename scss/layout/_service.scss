@@ -1,0 +1,95 @@
+.service {
+    .service-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    color: #ffffff;
+}
+
+.service-flex {
+    .service_left {
+        width: 35%;
+        // background-image: url(../img/service.jpg);
+        // background-size: cover;
+        // background-position: center;
+        // height: 100%;
+        // width: 100%;
+        img {
+            width: 100%;
+            height: inherit;
+        }
+    }
+    .service_right {
+        background-image: url(../img/service-bg.jpg);
+        width: 65%;
+        padding: 45px;
+        background-size: cover;
+        background-position: center;
+        h2 {
+            margin-bottom: 70px;
+        }
+
+    }
+}
+
+.service_right {
+    .service_right-flex {
+        display: flex;
+        margin-left: 20px;
+        column-gap: 60px;
+        .service-ul_1 {
+            ul {
+                li {
+                    list-style-type: circle;
+                    position: relative;
+                    margin: 10px 0;
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                    &:first-child::after {
+                        content: "";
+                        position: absolute;
+                        width: 335px;
+                        height: 128px;
+                        background-color:#ffffff34;
+                        top: -14px;
+                        left: -29px;
+                        border-top: 3px solid #ffffff;
+                    }
+                    span {
+                        display: block;
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        .service-ul_2 {
+            ul {
+                li {
+                    list-style: circle;
+                    margin: 10px 0;
+                }
+            }
+        }
+    }
+}
+
+.text_chllange {
+    background-color: #0c2175;
+    margin-top: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-block;
+    p {
+        margin-bottom: 0;
+        display: inline;
+
+        span {
+            font-weight: bold;
+        }
+    }
+    .fa-arrow-right {
+        margin-left: 20px;
+    }
+ 
+}

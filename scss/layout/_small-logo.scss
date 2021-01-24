@@ -1,0 +1,14 @@
+.small_logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 0;
+    .common_logo {
+        margin: 0 15px;
+        img {
+            &:hover {
+                color: $primary_color;
+            }
+        }
+    }
+}
